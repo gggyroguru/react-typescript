@@ -25,7 +25,6 @@ const allTabs: string[] = ['all', 'active', 'completed']
 
 const App = () => {
 
-    const [allClients, setAllClients] = useState<Client[]>()
     const [input, setInput] = useState<string>('')
     const [todos, setTodos] = useState<Todo[]>(getTodos())
     const [edit, setEdit] = useState<Todo>({id: '', task: '', completed: false})
